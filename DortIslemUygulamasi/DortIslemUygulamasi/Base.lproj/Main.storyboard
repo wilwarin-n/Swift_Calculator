@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DortIslemUygulamasi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="İlk rakamı giriniz.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OPb-cb-Nmf">
+                                <rect key="frame" x="74" y="131" width="246" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="y0h-M9-6T1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="İkinci rakamı giriniz.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7DM-wR-kVr">
+                                <rect key="frame" x="74" y="173" width="246" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="qan-WF-6jV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PV3-uT-Jat">
+                                <rect key="frame" x="160" y="242" width="34" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="JbX-o3-9Kg"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="-" cornerStyle="dynamic">
+                                    <backgroundConfiguration key="background">
+                                        <color key="strokeColor" systemColor="placeholderTextColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="cıkarmaclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="whS-yv-9AT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qoo-70-HY4">
+                                <rect key="frame" x="204" y="242" width="32" height="35"/>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="*" cornerStyle="dynamic">
+                                    <backgroundConfiguration key="background">
+                                        <color key="strokeColor" systemColor="placeholderTextColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="carpmaclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vK5-v7-KZU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grN-sx-f6H">
+                                <rect key="frame" x="244" y="242" width="32" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="iOK-1c-hpo"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="/" cornerStyle="dynamic">
+                                    <backgroundConfiguration key="background">
+                                        <color key="strokeColor" systemColor="placeholderTextColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="bolmeclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r8x-Xn-GPh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nq-ao-Y2r">
+                                <rect key="frame" x="117" y="242" width="35" height="35"/>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+" cornerStyle="dynamic">
+                                    <backgroundConfiguration key="background">
+                                        <color key="strokeColor" systemColor="placeholderTextColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="toplamaclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uf0-pA-9Be"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sonuç:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3h0-Cu-0kn">
+                                <rect key="frame" x="123" y="311" width="161" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OPb-cb-Nmf" firstAttribute="leading" secondItem="7DM-wR-kVr" secondAttribute="leading" id="0XE-zY-s9f"/>
+                            <constraint firstItem="3Nq-ao-Y2r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="1gN-RL-UEl"/>
+                            <constraint firstItem="PV3-uT-Jat" firstAttribute="baseline" secondItem="3Nq-ao-Y2r" secondAttribute="firstBaseline" id="2iX-nE-Qf0"/>
+                            <constraint firstItem="OPb-cb-Nmf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="5QR-7R-2b0"/>
+                            <constraint firstItem="Qoo-70-HY4" firstAttribute="baseline" secondItem="PV3-uT-Jat" secondAttribute="baseline" id="7VE-rb-GC4"/>
+                            <constraint firstItem="Qoo-70-HY4" firstAttribute="leading" secondItem="PV3-uT-Jat" secondAttribute="trailing" constant="10" id="7Yq-Oe-5wj"/>
+                            <constraint firstItem="7DM-wR-kVr" firstAttribute="top" secondItem="OPb-cb-Nmf" secondAttribute="bottom" constant="8" id="8Ix-gN-q2a"/>
+                            <constraint firstItem="OPb-cb-Nmf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="AXi-3b-GM4"/>
+                            <constraint firstItem="Qoo-70-HY4" firstAttribute="baseline" secondItem="grN-sx-f6H" secondAttribute="baseline" id="Bwo-wI-GF7"/>
+                            <constraint firstItem="3Nq-ao-Y2r" firstAttribute="baseline" secondItem="PV3-uT-Jat" secondAttribute="baseline" id="FGG-sU-UN0"/>
+                            <constraint firstItem="PV3-uT-Jat" firstAttribute="leading" secondItem="3Nq-ao-Y2r" secondAttribute="trailing" constant="8" id="KfK-iF-LM0"/>
+                            <constraint firstItem="grN-sx-f6H" firstAttribute="leading" secondItem="Qoo-70-HY4" secondAttribute="trailing" constant="8" id="Y6d-ie-cFu"/>
+                            <constraint firstItem="3h0-Cu-0kn" firstAttribute="top" secondItem="3Nq-ao-Y2r" secondAttribute="bottom" constant="35" id="cbO-oj-FqZ"/>
+                            <constraint firstItem="OPb-cb-Nmf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cnQ-nr-wi5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3h0-Cu-0kn" secondAttribute="bottom" constant="472" id="jRb-51-bGc"/>
+                            <constraint firstItem="3Nq-ao-Y2r" firstAttribute="top" secondItem="7DM-wR-kVr" secondAttribute="bottom" constant="35" id="kR3-uy-J8p"/>
+                            <constraint firstItem="7DM-wR-kVr" firstAttribute="centerX" secondItem="3h0-Cu-0kn" secondAttribute="centerX" id="leV-Il-bkE"/>
+                            <constraint firstItem="OPb-cb-Nmf" firstAttribute="trailing" secondItem="7DM-wR-kVr" secondAttribute="trailing" id="oMl-Lk-vhn"/>
+                            <constraint firstItem="3Nq-ao-Y2r" firstAttribute="leading" secondItem="3h0-Cu-0kn" secondAttribute="leading" id="vOP-Ew-mO5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ikincitext" destination="7DM-wR-kVr" id="mO0-M3-TcB"/>
+                        <outlet property="ilktext" destination="OPb-cb-Nmf" id="EHf-nh-OFt"/>
+                        <outlet property="sonuclabel" destination="3h0-Cu-0kn" id="WR9-F5-50z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.450381679389313" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
